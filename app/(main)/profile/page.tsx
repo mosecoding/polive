@@ -43,7 +43,7 @@ export default function ProfilePage() {
               return (
                 <TableRow key={poll._id}>
                   <TableCell className="max-w-xs truncate">
-                    <p>{poll.title}</p>
+                    {poll.title}
                   </TableCell>
                   <TableCell>
                     <Badge>{isExpired ? "Expired" : "Active"}</Badge>
